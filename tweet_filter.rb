@@ -7,7 +7,6 @@ test_tweets = [
 
 banned_phrases = ["sucks", "bad", "hate", "foolish", "danger to society"]
 
-
 test_tweets.each do |tweet|
   banned_phrases.each do |banned_phrase|
     if tweet.include?(banned_phrase)
