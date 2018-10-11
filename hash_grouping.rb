@@ -8,8 +8,8 @@ players = [
 sport_sorted = Hash.new
 
 players.each do |player|
-   puts sport = player[:sport]
-   puts name = player[:name]
+   sport = player[:sport]
+   name = player[:name]
 
    if sport_sorted[sport] == nil
      sport_sorted[sport.to_sym] = [name]
