@@ -9,12 +9,12 @@ sport_sorted = Hash.new
 
 players.each do |player|
    sport = player[:sport]
-   name = player[:name]
 
-   if sport_sorted[sport] == nil
-     sport_sorted[sport.to_sym] = [name]
-   else
-     sport_sorted[sport].push(name)
-   end
+  if sport_sorted[sport] == nil
+    sport_sorted[sport] = []
+  end
+
+  sport_sorted[sport] << player[:name]
+
 end
 puts sport_sorted
